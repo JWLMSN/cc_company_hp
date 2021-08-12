@@ -133,15 +133,22 @@ nav h2 {
 footer {
   grid-column-end: span 3;
   background-color: rgb(101, 105, 109);
-  padding-top: 40px;
 }
 
-footer h2, footer h3 {
+footer h2 {
+  font-size: 1rem;
+  margin: 30px;
+  color: white;
+}
+
+footer h3 {
+  font-size: 0.9rem;
   margin: 30px;
   color: white;
 }
 
 footer p {
+  font-size: 0.7rem;
   margin-top: 100px;
   color: white;
 }
