@@ -1,7 +1,7 @@
 # Company Homepage Mockup
 A mockup homepage utilizing both CSS-grids and -flexbox to achieve a clean, responsive design.
 
-![screenshot of the mobile version of the mockup homepage](https://jwlmsn.uber.space/resources/images/company_hp_mockup.png)
+![screenshot of the mobile version of the mockup homepage](https://jwlmsn.uber.space/resources/images/mockup_grids.png)
 
 
 ## Live Version
