@@ -1,0 +1,70 @@
+* {
+    /*border: 1px solid red !important;*/
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 22px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline  ;
+}
+
+.container {
+    display: grid;
+    margin: auto;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* if .container * {} all descendants are flex, if .container > * {} only children are! */
+.container > * {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  grid-column-end: span 3;
+}
+  
+
+header h1 {
+  padding: 20px;
+  font-size: 2.2rem;
+  letter-spacing: 5px;
+}
+
+nav {
+  margin: 0 10%;
+  justify-content: space-around !important;
+}
+nav h2 {
+  display: inline-block;
+}
+
+main {
+  min-height: 300px;
+  background-image: url("https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/skyscrapers.jpg");
+  justify-content: center;
+  align-items: center;
+}
+
+.mission {
+  /* margin: auto centers the div vertically inside main, when the parent-flexbox does NOT specify: justify-content: center AND align-items: center*/ 
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+}
+
+footer {
+  background-color: dodgerblue;
+}
