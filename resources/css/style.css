@@ -14,6 +14,10 @@ body {
     text-align: center;
 }
 
+h2 {
+  font-size: 1.2rem;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -27,7 +31,7 @@ a:hover {
     display: grid;
     margin: auto;
     grid-gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 5fr 1fr;
   }
 
   /* if .container * {} all descendants are flex, if .container > * {} only children are! */
@@ -58,15 +62,12 @@ nav h2 {
   display: inline-block;
 }
 
-main {
-  grid-column-end: span 3;
-}
 
 .mission {
   grid-column-end: span 3;
   grid-row-end: span 1;
   display: flex;
-  min-height: 300px;
+  min-height: 400px;
   background-image: url("https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/skyscrapers.jpg");
   justify-content: center;
   align-items: center;
@@ -79,13 +80,58 @@ main {
   padding: 20px;
 }
 
+.mission h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
 .portfolio {
-  grid-column-end: span 3;
+  grid-column-start: 2;
+  grid-column-end: span 1;
   grid-row-end: span 1;
   text-align: left !important;
+  padding: 30px 0;
+}
+
+.gallery {
+  grid-column-start: 2;
+  grid-column-end: span 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 250px;
+  height: 173.333px;
+}
+
+@media only screen and (max-width: 900px) {
+  .gallery {
+    flex-wrap: column wrap;
+  }
+
+  .gallery img {
+    width: 300px;
+    height: auto;
+  }
+}
+
+.expose {
+  padding: 15px;
 }
 
 footer {
   grid-column-end: span 3;
-  background-color: dodgerblue;
+  background-color: rgb(101, 105, 109);
+}
+
+footer h2, footer h3 {
+  margin: 30px;
+  color: white;
+}
+
+footer p {
+  margin-top: 100px;
+  color: white;
 }
